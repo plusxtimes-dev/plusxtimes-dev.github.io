@@ -1,0 +1,121 @@
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8; /* Background color for the whole page */
+    background-image: url('/5384016.jpg'); /* Background image (optional) */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the background image */
+}
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #f39c12;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.icon {
+    font-size: 5rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif; /* Use Poppins for paragraph */
+    font-weight: 400; /* Normal weight for readability */
+}
+
+.animation {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    animation: blink 1.5s infinite alternate;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 2.5rem;
+    color: #555;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f39c12;
+    transform: scale(1.1);
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#lastUpdated {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 10px;
+}
